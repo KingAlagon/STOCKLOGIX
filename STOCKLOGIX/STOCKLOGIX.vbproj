@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{699F6389-E04A-45FB-B51A-A275DF945502}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>STOCKSLOGIX.My.MyApplication</StartupObject>
+    <RootNamespace>STOCKSLOGIX</RootNamespace>
+    <AssemblyName>STOCKSLOGIX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\My Pc\Desktop\STOCKLOGIX\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>STOCKSLOGIX</ProductName>
+    <PublisherName>STOCKSLOGIX</PublisherName>
+    <SuiteName>STOCKSLOGIX</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>STOCKSLOGIX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>STOCKSLOGIX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F94DE33295EAA1209BB1380120DE12AA9000BD08</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ADB_CRUD_FINALPROJ_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>4a.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\All Files\File Folders\Peng\Subjects\SYSTEM INTEGRATION\database connector\database connector\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\..\..\..\..\..\..\All Files\File Folders\Peng\Subjects\SYSTEM INTEGRATION\database connector\database connector\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addProduct.Designer.vb">
+      <DependentUpon>addProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSupplier.Designer.vb">
+      <DependentUpon>addSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.vb">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admins.Designer.vb">
+      <DependentUpon>admins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="eMain_Form.Designer.vb">
+      <DependentUpon>eMain_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eMain_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eMenuLS.Designer.vb">
+      <DependentUpon>eMenuLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eMenuLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeelogin.Designer.vb">
+      <DependentUpon>employeelogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employeelogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employees.Designer.vb">
+      <DependentUpon>employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logs.Designer.vb">
+      <DependentUpon>logs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="logs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.Designer.vb">
+      <DependentUpon>main_form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginoption.Designer.vb">
+      <DependentUpon>loginoption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginoption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuLS.Designer.vb">
+      <DependentUpon>menuLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="POS.Designer.vb">
+      <DependentUpon>POS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prodList.Designer.vb">
+      <DependentUpon>prodList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prodList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reactivateStocks.Designer.vb">
+      <DependentUpon>reactivateStocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reactivateStocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockIn.Designer.vb">
+      <DependentUpon>stockIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stockIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockInProduct.Designer.vb">
+      <DependentUpon>stockInProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stockInProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockList.Designer.vb">
+      <DependentUpon>stockList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stockList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockOutProduct.Designer.vb">
+      <DependentUpon>stockOutProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stockOutProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplierList.Designer.vb">
+      <DependentUpon>supplierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="supplierList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateProductForm.Designer.vb">
+      <DependentUpon>updateProductForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateProductForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.vb">
+      <DependentUpon>addUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateStocks.Designer.vb">
+      <DependentUpon>updateStocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateStocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateSupplier.Designer.vb">
+      <DependentUpon>updateSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlist.Designer.vb">
+      <DependentUpon>userlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userUpdateForm.Designer.vb">
+      <DependentUpon>userUpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userUpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addProduct.resx">
+      <DependentUpon>addProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSupplier.resx">
+      <DependentUpon>addSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admins.resx">
+      <DependentUpon>admins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eMain_Form.resx">
+      <DependentUpon>eMain_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eMenuLS.resx">
+      <DependentUpon>eMenuLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeelogin.resx">
+      <DependentUpon>employeelogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employees.resx">
+      <DependentUpon>employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logs.resx">
+      <DependentUpon>logs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_form.resx">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginoption.resx">
+      <DependentUpon>loginoption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuLS.resx">
+      <DependentUpon>menuLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prodList.resx">
+      <DependentUpon>prodList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reactivateStocks.resx">
+      <DependentUpon>reactivateStocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockIn.resx">
+      <DependentUpon>stockIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockInProduct.resx">
+      <DependentUpon>stockInProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockList.resx">
+      <DependentUpon>stockList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockOutProduct.resx">
+      <DependentUpon>stockOutProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplierList.resx">
+      <DependentUpon>supplierList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateProductForm.resx">
+      <DependentUpon>updateProductForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateStocks.resx">
+      <DependentUpon>updateStocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateSupplier.resx">
+      <DependentUpon>updateSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlist.resx">
+      <DependentUpon>userlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userUpdateForm.resx">
+      <DependentUpon>userUpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="STOCKLOGIX_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4a.ico" />
+    <None Include="Resources\IMG_9285.jpg" />
+    <Content Include="STOCKSLOGIX-final.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
